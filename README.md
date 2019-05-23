@@ -1,10 +1,10 @@
-![](https://raw.githubusercontent.com/kaelhem/katpat/master/katpat-remote/src/assets/logo.svg)
+![](https://raw.githubusercontent.com/kaelhem/katpat/master/logo.png)
 
 # Katpat
 
 An open-source arduino quadruped bot driven over bluetooth.
 
-Documentation will coming soon!
+*Documentation will coming soon!*
 
 ## Contributing
 

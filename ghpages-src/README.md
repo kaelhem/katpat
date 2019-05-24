@@ -6,12 +6,12 @@ This website is based on [Gatsby](https://www.gatsbyjs.org/), and if you want to
 npm install --global gatsby-cli@next
 ```
 
-To develop:
+To run the app in development mode:
 ```sh
 gatsby develop
 ```
 
-To make a release:
+To make a release build:
 ```sh
 gatsby build
 ```

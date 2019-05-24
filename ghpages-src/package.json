@@ -6,6 +6,7 @@
   "dependencies": {
     "gatsby": "next",
     "gatsby-plugin-less": "^2.0.0-beta.5",
+    "gatsby-plugin-manifest": "^2.1.1",
     "gatsby-plugin-react-helmet": "next",
     "less": "^3.8.1",
     "react": "^16.4.1",

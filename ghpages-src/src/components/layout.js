@@ -1,4 +1,4 @@
-import React, { Fragment, createRef, useState } from 'react'
+import React, { Fragment, useState } from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
@@ -38,13 +38,14 @@ const LayoutWrapper = ({ children, showSidebar, onHideSidebar }) => {
         vertical
         visible={ showSidebar }
         width='wide'
+        style={{ zIndex: 1000 }}
       >
         <div style={ sidebarStyle }>
           <MainMenu />
         </div>
       </Sidebar>
       <Sidebar.Pusher>
-        <div style={{ marginTop: '10rem' }}>
+        <div style={{ marginTop: '8rem' }}>
           { children }
         </div>
       </Sidebar.Pusher>
@@ -54,7 +55,7 @@ const LayoutWrapper = ({ children, showSidebar, onHideSidebar }) => {
 
 const Layout = ({ children, data }) => {
   const [sidebarVisibility, setSidebarVisibility] = useState(false)
-  
+
   return (
     <StaticQuery
       query={graphql`
@@ -80,7 +81,11 @@ const Layout = ({ children, data }) => {
             <Container>
               <Grid relaxed stackable>
                 <Grid.Column mobile={16} tablet={4} computer={4}>
-                  <Responsive minWidth={768} as={MainMenu} />
+                  <Responsive minWidth={768} as={ Box }>
+                    <div style={{ padding: '0 2em', margin: 0}}>
+                      <MainMenu />
+                    </div>
+                  </Responsive>
                 </Grid.Column>
                 <Grid.Column mobile={16} tablet={8} computer={8}>
                   { children }

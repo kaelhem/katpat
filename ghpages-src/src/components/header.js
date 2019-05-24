@@ -8,10 +8,11 @@ const headerStyle = {
   justifyContent: 'center',
   alignItems: 'center',
   width: '100vw',
+  height: 60,
   position: 'fixed',
   top: 0,
   left: 0,
-  zIndex: 100
+  zIndex: 900
 }
 
 const Header = ({ siteTitle, onShowSidebar }) => (

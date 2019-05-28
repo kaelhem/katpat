@@ -1084,6 +1084,11 @@
     lodash "^4.17.11"
     to-fast-properties "^2.0.0"
 
+"@capacitor/android@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@capacitor/android/-/android-1.0.0.tgz#b361822235f382661255d3f6ad4c427b24e5563b"
+  integrity sha512-XQN6uDf4hspXhes/1V17RzdJvz1YReNLA0RplUMUrhhWGVhg7zrDnCOZu6+dH8cJI4HYa/MrxuzP/5gV6mM53A==
+
 "@capacitor/cli@^1.0.0-beta.24":
   version "1.0.0-beta.24"
   resolved "https://registry.yarnpkg.com/@capacitor/cli/-/cli-1.0.0-beta.24.tgz#d9d007c4d3bdf59def10e609520a0a41cbeac4ef"

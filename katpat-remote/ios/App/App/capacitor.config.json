@@ -1,6 +1,6 @@
 {
   "appId": "com.klem.katpatremoteapp",
-  "appName": "Katpat Remote",
+  "appName": "KatPat Remote",
   "bundledWebRuntime": false,
   "npmClient": "yarn",
   "webDir": "build"

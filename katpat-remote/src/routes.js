@@ -9,7 +9,7 @@ import BleProtectedRoute from 'components/ble-protected-route'
 import { PlayIcon, CalibrateIcon, StudioIcon } from 'components/icons'
 
 const Routes = () => (
-  <BrowserRouter>
+  <BrowserRouter basename={'/katpat/remote-controller'}>
     <Switch>
       <Route exact path="/" component={Home} />
       <BleProtectedRoute path="/play" component={Play} title='PLAY' icon={ PlayIcon } />

@@ -11,7 +11,7 @@ module.exports = {
       options: {
         name: "KatPat",
         short_name: "KatPat",
-        start_url: "/",
+        start_url: ".",
         background_color: "#93d12f",
         theme_color: "#93d12f",
         display: "standalone",

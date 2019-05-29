@@ -8,7 +8,7 @@ This is a simple react webapp (set up with [CRA](https://github.com/facebook/cre
 
 As this webapp is a bluetooth controller, it use the Web Bluetooth API for the browser version, and this **will only works with Chrome**.
 
-The webapp is accessible online juste [here](https://kaelhem.github.io/katpat/controller)
+The webapp is accessible online juste [here](https://kaelhem.github.io/katpat/remote-controller)
 
 ## iOS app
 

@@ -41,6 +41,6 @@ cp -r katpat-remote/build/ $remoteControllerPath
 cp resources/index.html "$deployDirectory/index.html"
 
 # deploy on github repo
-# documentation-src/node_modules/.bin/gh-pages -d deploy
+documentation-src/node_modules/.bin/gh-pages -d deploy
 
 echo "Done"

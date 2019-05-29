@@ -2,7 +2,7 @@ import React, { Fragment, useState } from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
-import { Sidebar, Container, Grid, Segment, Responsive } from 'semantic-ui-react'
+import { Sidebar, Container, Segment, Responsive } from 'semantic-ui-react'
 import MainMenu from './menu'
 import Header from './header'
 import 'semantic-ui-less/semantic.less'
@@ -45,7 +45,7 @@ const LayoutWrapper = ({ children, showSidebar, onHideSidebar }) => {
         </div>
       </Sidebar>
       <Sidebar.Pusher>
-        <div style={{ marginTop: '8rem' }}>
+        <div style={{ paddingTop: 60, height: '100vh' }}>
           { children }
         </div>
       </Sidebar.Pusher>
@@ -78,19 +78,17 @@ const Layout = ({ children, data }) => {
           />
           <LayoutWrapper showSidebar={ sidebarVisibility } onHideSidebar={ () => setSidebarVisibility(false) }>
             <Header siteTitle={data.site.siteMetadata.title} onShowSidebar={ () => setSidebarVisibility(true) } />
-            <Container>
-              <Grid relaxed stackable>
-                <Grid.Column mobile={16} tablet={4} computer={4}>
-                  <Responsive minWidth={768} as={ Box }>
-                    <div style={{ padding: '0 2em', margin: 0}}>
-                      <MainMenu />
-                    </div>
-                  </Responsive>
-                </Grid.Column>
-                <Grid.Column mobile={16} tablet={8} computer={8}>
+            <Container style={{ height: '100%' }}>
+              <div style={{ display: 'flex', height: '100%' }}>
+                <Responsive minWidth={768} style={{ background: '#e3eac5' }}>
+                  <div style={{ padding: '2em', margin: 0}}>
+                    <MainMenu />
+                  </div>
+                </Responsive>
+                <Responsive style={{ padding: '2em' }}>
                   { children }
-                </Grid.Column>
-              </Grid>
+                </Responsive>
+              </div>
             </Container>
           </LayoutWrapper>
         </Fragment>

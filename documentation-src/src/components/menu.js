@@ -1,6 +1,7 @@
 import React from 'react'
-import { Menu } from 'semantic-ui-react'
+import { Menu, Image } from 'semantic-ui-react'
 import { Link } from 'gatsby'
+import logo from '../assets/logo.svg'
 
 const LinkedItem = ({ children, ...props }) => (
   <Menu.Item as={Link} activeClassName='active' {...props}>{children}</Menu.Item>
@@ -8,6 +9,7 @@ const LinkedItem = ({ children, ...props }) => (
 
 const MainMenu = ({ children, data }) => (
   <Menu text vertical fluid>
+    <Image src={ logo } />
     <LinkedItem to='/page-2'>Introduction</LinkedItem>
     <Menu.Item>
       How it works

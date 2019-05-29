@@ -17,7 +17,22 @@ module.exports = {
         display: "standalone",
         icon: "src/assets/icon.png",
         crossOrigin: `use-credentials`
-      },
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/pages`,
+        name: "pages"
+      }
+    },
+    {
+      resolve: `gatsby-mdx`,
+      options: {
+        defaultLayouts: {
+          default: require.resolve('./src/components/layout.js')
+        }
+      }
     }
   ]
 }

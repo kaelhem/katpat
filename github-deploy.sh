@@ -17,7 +17,12 @@ mkdir $deployDirectory
 # build documentation
 mkdir $documentationPath
 cd documentation-src
-gatsby build --prefix-paths
+if [ $useYarn = 1 ]
+then
+  yarn build-deploy
+else
+  npm run build-deploy
+fi
 cd ..
 
 # copy documentation build to deploy folder

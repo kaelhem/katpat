@@ -17,7 +17,7 @@ mkdir $deployDirectory
 # build documentation
 mkdir $documentationPath
 cd documentation-src
-gatsby build
+gatsby build --prefix-paths
 cd ..
 
 # copy documentation build to deploy folder

@@ -33,9 +33,9 @@ mkdir $remoteControllerPath
 cd katpat-remote
 if [ $useYarn = 1 ]
 then
-  yarn build
+  PUBLIC_URL=/katpat/remote-controller yarn build
 else
-  npm run build
+  PUBLIC_URL=/katpat/remote-controller npm run build
 fi
 cd ..
 

@@ -6,9 +6,9 @@ This is a simple react webapp (set up with [CRA](https://github.com/facebook/cre
 
 ## Web app
 
-As this webapp is a bluetooth controller, it use the Web Bluetooth API for the browser version, and this **will only works with Chrome**.
+As this webapp is a bluetooth controller, it uses the Web Bluetooth API for the browser version, and this **will only works with Chrome**.
 
-The webapp is accessible online juste [here](https://kaelhem.github.io/katpat/remote-controller)
+The webapp is accessible online just [here](https://kaelhem.github.io/katpat/remote-controller)
 
 ## iOS app
 
@@ -46,6 +46,7 @@ You're ready to start hacking.
 
 ## Build
 To make a production build, type `yarn build`.
-Then you can publish the content of the `build` folder to a web server.
+Then you can publish the content of the `build` folder to the root of a web server.
+If you want to deploy the build to a sub folder, probably you will have to play with the *homepage* parameter in *package.json*. Read more about it [here](https://facebook.github.io/create-react-app/docs/deployment#building-for-relative-paths)
 
 *Note that the Web Bluetooth API will only works with `https`. Only `localhost` is allowed without the `https` protocol.*

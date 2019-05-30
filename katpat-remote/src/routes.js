@@ -8,8 +8,17 @@ import Layout from 'components/layout'
 import BleProtectedRoute from 'components/ble-protected-route'
 import { PlayIcon, CalibrateIcon, StudioIcon } from 'components/icons'
 
+const homepage = process.env.REACT_APP_PUBLIC_URL
+
+let routerProps = {}
+if (homepage) {
+  routerProps.basename = homepage
+}
+
+console.log('homepage sets with:', homepage)
+
 const Routes = () => (
-  <BrowserRouter basename={'/katpat/remote-controller'}>
+  <BrowserRouter { ...routerProps }>
     <Switch>
       <Route exact path="/" component={Home} />
       <BleProtectedRoute path="/play" component={Play} title='PLAY' icon={ PlayIcon } />

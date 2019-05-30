@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d7e2b1b9b225ab1a29579cd0dcc44c6e",
+    "revision": "34e2111fe1dfa85785772b45829e8b7f",
     "url": "/katpat/remote-controller/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/katpat/remote-controller/static/css/2.132e0c42.chunk.css"
   },
   {
-    "revision": "e3a3c7f8a46e61b457e5",
+    "revision": "5f97397fa627357c3e6f",
     "url": "/katpat/remote-controller/static/css/main.12f1d9df.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/katpat/remote-controller/static/js/2.f0a3dd67.chunk.js"
   },
   {
-    "revision": "e3a3c7f8a46e61b457e5",
-    "url": "/katpat/remote-controller/static/js/main.d1ceda16.chunk.js"
+    "revision": "5f97397fa627357c3e6f",
+    "url": "/katpat/remote-controller/static/js/main.5d6b47d5.chunk.js"
   },
   {
     "revision": "70cf5689c4d7c412977a",

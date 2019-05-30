@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/katpat/remote-controller/precache-manifest.af49f8ed37d75e252bf0bd3d6d50bb83.js"
+  "/katpat/remote-controller/precache-manifest.4f9d76e0c3b55918ca8dbcb3bc9e616c.js"
 );
 
 self.addEventListener('message', (event) => {
